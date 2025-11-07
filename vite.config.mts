@@ -1,7 +1,7 @@
+import path from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import RubyPlugin from 'vite-plugin-ruby'
-import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [
@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./app/javascript', import.meta.url))
+      '@': path.resolve(__dirname, './app/javascript')
     }
   },
   server: {

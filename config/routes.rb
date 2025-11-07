@@ -11,4 +11,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+
+  # D&D Resources
+  resources :classes, only: [ :index, :show ]
+  resources :races, only: [ :index, :show ]
+  resources :equipment, only: [ :index, :show ]
+  resources :spells, only: [ :index, :show ]
+  resources :monsters, only: [ :index, :show ]
 end

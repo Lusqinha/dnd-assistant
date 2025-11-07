@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900">
+  <div class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
     <div class="container mx-auto px-4 py-16">
       <div class="max-w-4xl mx-auto">
         <!-- Header -->
@@ -7,30 +7,30 @@
           <h1 class="text-6xl font-bold text-white mb-4">
             🎲 D&D Assistant
           </h1>
-          <p class="text-xl text-purple-200">
+          <p class="text-xl text-slate-300">
             {{ message }}
           </p>
         </div>
 
         <!-- Features Grid -->
         <div class="grid md:grid-cols-3 gap-6 mb-12">
-          <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 border border-white/20 hover:bg-white/20 transition">
+          <a href="/equipment" class="bg-white/10 backdrop-blur-lg rounded-lg p-6 border border-white/20 hover:bg-white/20 transition cursor-pointer">
             <div class="text-4xl mb-3">⚔️</div>
             <h3 class="text-xl font-semibold text-white mb-2">Equipment</h3>
-            <p class="text-purple-200">{{ stats.equipment }} items catalogados</p>
-          </div>
+            <p class="text-slate-300">{{ stats.equipment }} items catalogados</p>
+          </a>
 
-          <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 border border-white/20 hover:bg-white/20 transition">
+          <a href="/monsters" class="bg-white/10 backdrop-blur-lg rounded-lg p-6 border border-white/20 hover:bg-white/20 transition cursor-pointer">
             <div class="text-4xl mb-3">🐉</div>
             <h3 class="text-xl font-semibold text-white mb-2">Monsters</h3>
-            <p class="text-purple-200">{{ stats.monsters }} criaturas</p>
-          </div>
+            <p class="text-slate-300">{{ stats.monsters }} criaturas</p>
+          </a>
 
-          <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 border border-white/20 hover:bg-white/20 transition">
+          <a href="/spells" class="bg-white/10 backdrop-blur-lg rounded-lg p-6 border border-white/20 hover:bg-white/20 transition cursor-pointer">
             <div class="text-4xl mb-3">✨</div>
             <h3 class="text-xl font-semibold text-white mb-2">Spells</h3>
-            <p class="text-purple-200">{{ stats.spells }} magias</p>
-          </div>
+            <p class="text-slate-300">{{ stats.spells }} magias</p>
+          </a>
         </div>
 
         <!-- Tech Stack -->
@@ -60,12 +60,12 @@
 
         <!-- CTA Button -->
         <div class="text-center mt-12">
-          <button 
-            @click="handleClick"
-            class="bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-200"
+          <a 
+            href="/classes"
+            class="inline-block bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-200"
           >
-            Começar Aventura
-          </button>
+            Explorar Classes
+          </a>
         </div>
       </div>
     </div>
@@ -89,8 +89,4 @@ const props = defineProps({
     })
   }
 })
-
-const handleClick = () => {
-  alert('🎲 Que a sorte esteja com você, aventureiro!')
-}
 </script>
