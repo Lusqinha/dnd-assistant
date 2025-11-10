@@ -134,7 +134,7 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
-    inertia_rails (3.11.0)
+    inertia_rails (3.12.1)
       railties (>= 6)
     io-console (0.8.1)
     irb (1.15.3)
@@ -177,7 +177,7 @@ GEM
     marcel (1.1.0)
     matrix (0.4.3)
     mini_mime (1.1.5)
-    minitest (5.26.0)
+    minitest (5.26.1)
     msgpack (1.8.0)
     mutex_m (0.3.0)
     net-imap (0.5.12)
@@ -414,7 +414,7 @@ DEPENDENCIES
   devise (~> 4.9)
   dotenv-rails (~> 3.1)
   importmap-rails
-  inertia_rails (~> 3.11)
+  inertia_rails (~> 3.12)
   jbuilder
   kamal
   letter_opener (~> 1.10)
