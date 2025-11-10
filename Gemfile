@@ -66,7 +66,7 @@ gem "byebug", "~> 12.0", group: :development
 gem "letter_opener", "~> 1.10", group: :development
 
 gem "devise", "~> 4.9"
-gem "inertia_rails", "~> 3.11"
+gem "inertia_rails", "~> 3.12"
 gem "vite_rails", "~> 3.0"
 
 gem "rails-i18n", "~> 8.0"
