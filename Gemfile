@@ -69,7 +69,7 @@ gem "devise", "~> 4.9"
 gem "inertia_rails", "~> 3.11"
 gem "vite_rails", "~> 3.0"
 
-gem "rails-i18n", "~> 8.0"
+gem "rails-i18n", "~> 8.1"
 
 gem "dotenv-rails", "~> 3.1"
 
