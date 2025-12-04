@@ -71,7 +71,7 @@ gem "vite_rails", "~> 3.0"
 
 gem "rails-i18n", "~> 8.0"
 
-gem "dotenv-rails", "~> 3.1"
+gem "dotenv-rails", "~> 3.2"
 
 # CSV parsing for seeding D&D data
 gem "csv", "~> 3.3"
